@@ -30,6 +30,8 @@ public class PayrollCalculator {
             }
             for (Employee makeEmployee : employees) {
                 System.out.printf("Employee ID: " + makeEmployee.getEmployeeId() + " \nName: " + makeEmployee.getName() + "\nPay: " + makeEmployee.getGrossPay() + "\n------------------------\n");
+
+                bufferedReader.close();
             }
         } catch (Exception ex) {
             System.out.println("Wrong Input!");
